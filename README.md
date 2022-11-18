@@ -43,4 +43,4 @@ Regression/classification models to determine what features explain wheter a vid
 Continuing to explore the data to find potential additional features. Comparing the features between the set of videos which we identified as having buzzed and the others using statistical tests.
 
 ## Additional questions for TAs
-help
+As we want to combine the data from the timeseries and channels dataset, we would like to keep only the channels ids for which the number of videos according to the timeseries dataset is the same as the one given by the channels dataset. But doing so, we need to drop abount 2/3 of the channels id, do you think it is a reasonable thing to drop that much data?
