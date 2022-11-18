@@ -33,10 +33,14 @@ Week 14 : Writing the final report
 
 
 ## Organization
-Corentin :
-Pierugo : 
-Sander :
-Wissam :
+### Corentin 
+Optimizing the use of datasets according to the analysis of variables and tools to manage large datasets, using vaex and dask to improve computation speed and memory usage. Continue to check the difference between the video in the timeseries dataset and the numbers given in the channels dataset. 
+### Pierugo 
+Defining virality, testing different threshold of the ratio of views and subsrcibers, with different transform (ex: log(views)/log(subscriber) to see how it affects our identifications of the channel which buzzed. 
+### Sander
+Regression/classification models to determine what features explain wheter a video has buzzed or not.
+### Wissam
+Continuing to explore the data to find potential additional features. Comparing the features between the set of videos which we identified as having buzzed and the others using statistical tests.
 
 ## Additional questions for TAs
 help
