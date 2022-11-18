@@ -25,11 +25,11 @@ For now, we already did some initial analysis on the data.
 - We also found some initial statistical results by looking at average durations of videos and activites of channels, as well as the correlations and dependences of features between each other. Again, only a few were interesting for us.
 
 ## Proposed timeline
-Week 10 : Optimizing the use of datasets according to the analysis of variables and tools to manage large datasets + defining virality
-Week 11 : Regression & additional analysis if needed
-Week 12 : Conclusion of regression & testing
-Week 13 : Visualization for the report
-Week 14 : Writing the final report
+Week 10 : Optimizing the use of datasets according to the analysis of variables and tools to manage large datasets + defining virality  
+Week 11 : Regression & additional analysis if needed  
+Week 12 : Conclusion of regression & testing  
+Week 13 : Visualization for the report  
+Week 14 : Writing the final report  
 
 
 ## Organization
