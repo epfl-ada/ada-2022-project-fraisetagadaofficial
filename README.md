@@ -25,13 +25,13 @@ $$views \geq (subs ~before ~release)^{threshold}$$
 
 $$\Longleftrightarrow\frac{\log(views)}{\log(subs ~before ~release)} \geq threshold $$
 
-Videos that satisfy this inequality will be tagged as viral. The value for $$threshold$$ was chosen so that we had a satisfiable rate of viral videos compared to non-viral ones.
+Videos that satisfy this inequality will be tagged as viral. The value for $threshold$ was chosen so that we had a satisfiable rate of viral videos compared to non-viral ones.
 Note that due to limited computational resources, we had to work only on a subset of the total videos. 
 With those in hand, we could then do a regression to predict if a video will be viral (based on our definitions) based on, of course, the number of subscribers of its channel, but also on its category, duration, title...
 
-~~We look at the distribution of different explanatory variables to make reasonable transformation on the data (log seems good for example) and build a good virality formula, ideally gaussian distributed. The most interesting parameters are the number of views and the number of subscribers, but one can take into account their evolutions across time (the most successful week in terms of views, or the total after 2 weeks…) and the category of topic the video lies in. Additionally to the intuition given by prior analysis of the data, we check some special values to make our formula consistent.  
-Then we model virality and make a regression to explain the phenomenon. This part may include other deeper analysis : clustering to see if some combination of elements work better together, pertinent data transformation,…  
-Finally we define our optimization goal (maximize probability of reaching a certain threshold of views) and make predictions.  ~~
+~~We look at the distribution of different explanatory variables to make reasonable transformation on the data (log seems good for example) and build a good virality formula, ideally gaussian distributed. The most interesting parameters are the number of views and the number of subscribers, but one can take into account their evolutions across time (the most successful week in terms of views, or the total after 2 weeks…) and the category of topic the video lies in. Additionally to the intuition given by prior analysis of the data, we check some special values to make our formula consistent.~~  
+~~Then we model virality and make a regression to explain the phenomenon. This part may include other deeper analysis : clustering to see if some combination of elements work better together, pertinent data transformation,…~~  
+~~Finally we define our optimization goal (maximize probability of reaching a certain threshold of views) and make predictions.~~
 
 For now, we already did some initial analysis on the data.  
 - We first had to clean the dataset from missing data and unconsistent values. This is done with methods already implemented in pandas and by filtering channels who appear to have different values in the different datasets. For example, we realized that some channels had a lot of subscribers but did not upload any videos, or uploaded videos that made 0 views. This kind of channels should be removed because they are outliers falsifying our results. We also remove channels that do not have their complete timeline in the corresponding dataset. We want to have a grasp of channels over time so we restrict our sample to those. In the end, only a fraction of the channels retained our attention. We also handled missing data accordingly.
@@ -40,12 +40,12 @@ For now, we already did some initial analysis on the data.
 - The process that took us the most of our time was then to actually measure the number of subscribers of each video's channel just before its release. We first worked on the metadata feather-reduced dataset to find these, before working on the full metadata dataset to also have information on the title, description and tags.
 
 ## Proposed timeline
-(Rewrite ?)
-~~Week 10 : Optimizing the use of datasets according to the analysis of variables and tools to manage large datasets + defining virality  
-Week 11 : Regression & additional analysis if needed  
-Week 12 : Conclusion of regression & testing  
-Week 13 : Visualization for the report  
-Week 14 : Writing the final report  ~~
+(Rewrite ?)  
+~~Week 10 : Optimizing the use of datasets according to the analysis of variables and tools to manage large datasets + defining virality~~  
+~~Week 11 : Regression & additional analysis if needed~~  
+~~Week 12 : Conclusion of regression & testing~~  
+~~Week 13 : Visualization for the report~~  
+~~Week 14 : Writing the final report~~
 
 
 ## Organization
