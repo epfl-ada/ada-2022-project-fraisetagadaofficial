@@ -33,20 +33,26 @@ With those in hand, we could then do a regression to predict if a video will be 
 ~~Then we model virality and make a regression to explain the phenomenon. This part may include other deeper analysis : clustering to see if some combination of elements work better together, pertinent data transformation,…~~  
 ~~Finally we define our optimization goal (maximize probability of reaching a certain threshold of views) and make predictions.~~
 
-For now, we already did some initial analysis on the data.  
+Our process went through the following steps:  
 - We first had to clean the dataset from missing data and unconsistent values. This is done with methods already implemented in pandas and by filtering channels who appear to have different values in the different datasets. For example, we realized that some channels had a lot of subscribers but did not upload any videos, or uploaded videos that made 0 views. This kind of channels should be removed because they are outliers falsifying our results. We also remove channels that do not have their complete timeline in the corresponding dataset. We want to have a grasp of channels over time so we restrict our sample to those. In the end, only a fraction of the channels retained our attention. We also handled missing data accordingly.
 - Once this was done, we took a look at the distribution of subscriber counts and total view counts per channel. Both followed a heavy-tailed distribution which follows our intuition since most channels have low subcribers/views but there still exist some that have a lot more than others.
-- We also found some initial statistical results by looking at average durations of videos and activites of channels, as well as the correlations and dependences of features between each other. Again, only a few were interesting for us.
-- The process that took us the most of our time was then to actually measure the number of subscribers of each video's channel just before its release. We first worked on the metadata feather-reduced dataset to find these, before working on the full metadata dataset to also have information on the title, description and tags.
+- We also found some statistical results by looking at average durations of videos and activites of channels, as well as the correlations and dependences of features between each other. Again, only a few were interesting for us.
+- The step that took us the most of our time was then to actually measure the number of subscribers of each video's channel just before its release. We first worked on the metadata feather-reduced dataset to select a sample, and then fetched information like the title, description and tags for these selected videos from the full metadata dataset.
+- After having a sample with features of interest, we tried different regression methods and looked at the most promising ones. Random forests were the go-to for us.
+- The data story then followed from the results we obtained in the previous step.
 
 ## Proposed timeline
-(Rewrite ?)  
 ~~Week 10 : Optimizing the use of datasets according to the analysis of variables and tools to manage large datasets + defining virality~~  
 ~~Week 11 : Regression & additional analysis if needed~~  
 ~~Week 12 : Conclusion of regression & testing~~  
 ~~Week 13 : Visualization for the report~~  
 ~~Week 14 : Writing the final report~~
 
+Week 10 : Definition of virality  
+Week 11 : Sample from original videos dataset and fetch from additional features from whole metadata  
+Week 12 : Exploratory Data Analysis of our new sample  
+Week 13 : Regression and find conclusions  
+Week 14 : Visualization and writing the final report  
 
 ## Organization
 ### Corentin 
