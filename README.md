@@ -2,7 +2,7 @@
 # Understanding the YouTube algorithm
 
 ## Website
-You can find our wonderful datastory [here](https://sandermiesen.github.io/FraiseTagADA_site/)
+You can find our wonderful datastory [here](https://sandermiesen.github.io/FraiseTagADA_site/).
 
 ## Abstract
 Learning about how YouTube works is essential. Indeed, it has a huge impact on the spread of information at a large scale.  
@@ -44,6 +44,6 @@ Optimizing the use of datasets according to the analysis of variables and tools 
 Sampled videos and measured number of subscribers before their releases. Notebook layout and putting together the work of others.
 Writing the data story and the README.
 ### Sander
-Hosts the website. Helped sampling videos. Complete Exploratory Data Analysis, visualizations. Training classification models. Writing the data story
+Hosts the website. Helped sampling videos. Entire Exploratory Data Analysis, visualizations. Training classification models. Writing the data story.
 ### Wissam
-Continuing to explore the data to find potential additional features. Found final precise definition of virality. Training classification models. Writing the data story.
+Continuing to explore the data to find potential additional features. Found final precise definition of virality. Training classification models. Writing the data story and the README.
