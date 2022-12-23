@@ -25,7 +25,7 @@ $$views \geq (subs ~before ~release)^{threshold}$$
 
 $$\Longleftrightarrow\frac{\log(views)}{\log(subs ~before ~release)} \geq threshold $$
 
-Videos that satisfy this inequality will be tagged as viral. The value for $threshold$ was chosen so that we had a satisfiable rate of viral videos compared to non-viral ones.
+Videos that satisfy this inequality will be tagged as viral. The value for $threshold$ was chosen so that we had a satisfiable rate of viral videos compared to non-viral ones, for example, choose it so that x% of videos are considered viral.
 Note that due to limited computational resources, we had to work only on a subset of the total videos. 
 With those in hand, we could then do a regression to predict if a video will be viral (based on our definitions) based on, of course, the number of subscribers of its channel, but also on its category, duration, title...
 
@@ -38,7 +38,7 @@ Our process went through the following steps:
 - Once this was done, we took a look at the distribution of subscriber counts and total view counts per channel. Both followed a heavy-tailed distribution which follows our intuition since most channels have low subcribers/views but there still exist some that have a lot more than others.
 - We also found some statistical results by looking at average durations of videos and activites of channels, as well as the correlations and dependences of features between each other. Again, only a few were interesting for us.
 - The step that took us the most of our time was then to actually measure the number of subscribers of each video's channel just before its release. We first worked on the metadata feather-reduced dataset to select a sample, and then fetched information like the title, description and tags for these selected videos from the full metadata dataset.
-- After having a sample with features of interest, we tried different regression methods and looked at the most promising ones. Random forests were the go-to for us.
+- After having a sample with features of interest, we tried different regression methods and looked at the most promising ones. We had the best results using Random Forests and kept this model.
 - The data story then followed from the results we obtained in the previous step.
 
 ## Proposed timeline
