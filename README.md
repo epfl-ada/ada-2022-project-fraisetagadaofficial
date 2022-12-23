@@ -19,14 +19,14 @@ We did not use any additional datasets as the one we have now since it already c
 
 ## Methods
 We looked at the distribution of different explanatory variables to make reasonable transformations on the data and build a good virality formula. The most interesting parameters are the number of views and the number of subscribers, but one can take into account their evolutions across time (the most successful week in terms of views, or the total after 2 weeks…) and the category of topic the video lies in. Additionally to the intuition given by prior analysis of the data, we check some special values to make our formula consistent.  
-Then we train a regression model to explain the virality process.
+Then we train a classification model to explain the virality process.
 
 Our process went through the following steps:  
 - We first had to clean the dataset from missing data and unconsistent values. This is done with methods already implemented in pandas and by filtering channels who appear to have different values in the different datasets. For example, we realized that some channels had a lot of subscribers but did not upload any videos, or uploaded videos that made 0 views. This kind of channels should be removed because they are outliers falsifying our results. We also remove channels that do not have their complete timeline in the corresponding dataset. We want to have a grasp of channels over time so we restrict our sample to those. In the end, only a fraction of the channels retained our attention. We also handled missing data accordingly.
 - Once this was done, we took a look at the distribution of subscriber counts and total view counts per channel. Both followed a heavy-tailed distribution which follows our intuition since most channels have low subcribers/views but there still exist some that have a lot more than others.
 - We also found some statistical results by looking at average durations of videos and activites of channels, as well as the correlations and dependences of features between each other. Again, only a few were interesting for us.
 - The step that took us the most of our time was then to actually measure the number of subscribers of each video's channel just before its release. We first worked on the metadata feather-reduced dataset to select a sample, and then fetched information like the title, description and tags for these selected videos from the full metadata dataset.
-- After having a sample with features of interest, we tried different regression methods and looked at the most promising ones. We had the best results using Random Forests and kept this model.
+- After having a sample with features of interest, we tried different regression methods and looked at the most promising ones. We had the best results using XGBoost and kept this model.
 - The data story then followed from the results we obtained in the previous step.
 
 ## Proposed timeline
@@ -44,6 +44,6 @@ Optimizing the use of datasets according to the analysis of variables and tools 
 Sampled videos and measured number of subscribers before their releases. Notebook layout and putting together the work of others.
 Writing the data story and the README.
 ### Sander
-Hosts the website. Helped sampling videos. Entire Exploratory Data Analysis, visualizations. Training classification models. Writing the data story.
+Hosts and creates the website. Helped sampling videos. Entire Exploratory Data Analysis, visualizations. Training classification models. Writing the data story.
 ### Wissam
 Continuing to explore the data to find potential additional features. Found final precise definition of virality. Training classification models. Writing the data story and the README.
