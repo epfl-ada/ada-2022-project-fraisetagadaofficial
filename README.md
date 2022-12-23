@@ -39,11 +39,11 @@ Week 14 : Visualization and writing the final report
 
 ## Organization
 ### Corentin 
-Optimizing the use of datasets according to the analysis of variables and tools to manage large datasets, using google colab to improve computation speed and memory usage. Fetching description, titles, tags of our sample. Wordclouds implementation. Training classification models. Writing the data story.
+Optimizing the use of datasets according to the analysis of variables and tools to manage large datasets, using Google Colab to improve computation speed and memory usage. Fetching description, titles, tags of our sample. Wordclouds implementation. Training classification models. Writing the data story.
 ### Pierugo 
-Sampled videos and measured number of subscribers before their releases. Notebook layout and putting together the work of others.
+Sampling videos and measuring number of subscribers before their releases. Notebook layout and putting together the work of others.
 Writing the data story and the README.
 ### Sander
-Hosts and creates the website. Helped sampling videos. Entire Exploratory Data Analysis, visualizations. Training classification models. Writing the data story.
+Hosting and creating the website. Helping to sample videos. Entire Exploratory Data Analysis, visualizations. Training classification models. Writing the data story.
 ### Wissam
-Continuing to explore the data to find potential additional features. Found final precise definition of virality. Training classification models. Writing the data story and the README.
+Continuing to explore the data to find potential additional features. Finding final precise definition of virality. Training classification models. Writing the data story and the README.
